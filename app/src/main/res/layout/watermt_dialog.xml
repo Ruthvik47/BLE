@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:padding="20dp">
+    <Button
+        android:id="@+id/empty_tank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calibrate empty"
+        android:textColor="@color/White"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_button"/>
+    <Button
+        android:id="@+id/fill_tank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/empty_tank"
+        android:text="Calibrate full"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/White"
+        android:background="@drawable/round_button"/>
+
+
+</RelativeLayout>

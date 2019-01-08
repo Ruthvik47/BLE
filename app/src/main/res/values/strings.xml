@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">BLE</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">BLE bluetooth</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="activation_pressure">Activation Pressure</string>
+    <string name="empty_safe_boost_limit">Empty safe boost limit</string>
+    <string name="save">save</string>
+    <string name="duty_cycle">duty cycle</string>
+    <string name="advanced_settings">Advanced settings</string>
+    <string name="psi">psi</string>
+
+
+    <!--Shared preferences-->
+    <string name="pref_file">com.example.ruthvikreddy.ble.Model_fileName</string>
+    <string name="Display_Units_int_value">com.example.ruthvikreddy.ble.Model_intValue</string>
+    <string name="Display_toggle_int_value">com.example.ruthvikreddy.ble.Model_toggle_intValue</string> <!--Display activity-->
+
+    <string name="general_settings">com.example.ruthvikreddy.ble.Model_int_unitsValue</string>
+    <string name="boost_control">com.example.ruthvikreddy.ble.Model_boostControl_values</string>
+    <string name="water_methanol_activity">com.example.ruthvikreddy.ble.Model_water_methanol</string>
+    <string name="transaction_control">com.example.ruthvikreddy.ble.Model_transaction_control</string>
+
+    <!--end of shared preferences-->
+
+
+    <!--Ble connect -->
+    <string name="ble_not_supported">ble not supported</string>
+    <string name="device_name">device name</string>
+    <string name="mac_address">Mac address</string>
+    <string name="not_paired">Not paired</string>
+    <string name="sharedpref">com.example.ruthvikreddy.ble.Model_main_file</string>
+    <string name="device_mac_address">com.example.ruthvikreddy.ble.Model_mac_address</string>
+    <string name="unknown_service">Unknown Service</string>
+</resources>

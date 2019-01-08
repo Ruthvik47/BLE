@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Display">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <include layout="@layout/app_tool_bar"
+        android:id="@+id/tool_bar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tool_bar"
+        android:layout_margin="10dp">
+        <TextView
+            android:id="@+id/boostControl_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:text="Units on mini display :"/>
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/boostControl_value"
+            android:gravity="start"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radio_psi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="psi"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:onClick="onRadioButtonClick"
+                />
+            <RadioButton
+                android:id="@+id/radio_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:text="Bar"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:onClick="onRadioButtonClick"
+                />
+            <RadioButton
+                android:id="@+id/radio_kpa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:text="kpa"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:onClick="onRadioButtonClick"
+                />
+        </RadioGroup>
+        <TextView
+            android:id="@+id/toogle_options"
+            android:layout_below="@id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="14dp"
+            android:textColor="@color/black"
+            android:text="Option toggle for mini display :"/>
+        <RadioGroup
+            android:id="@+id/radiogroup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toogle_options"
+            android:gravity="start"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/graph_display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Graph display"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:layout_marginTop="8dp"
+                android:onClick="onRadiotoggleButtonClick"
+                />
+            <RadioButton
+                android:id="@+id/peek_displpay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:text="Peek display"
+                android:layout_marginTop="8dp"
+                android:onClick="onRadiotoggleButtonClick"
+                />
+            <RadioButton
+                android:id="@+id/duty_cycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:text="Duty cycle"
+                android:layout_marginTop="8dp"
+                android:onClick="onRadiotoggleButtonClick"
+                />
+            <RadioButton
+                android:id="@+id/waste_gate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Waste-gate podition"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:layout_marginTop="8dp"
+                android:onClick="onRadiotoggleButtonClick"
+                />
+            <RadioButton
+                android:id="@+id/speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:text="Speed"
+                android:layout_marginTop="8dp"
+                android:onClick="onRadiotoggleButtonClick"
+                />
+            <RadioButton
+                android:id="@+id/fluid_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:text="Fluid Level"
+                android:layout_marginTop="8dp"
+                android:onClick="onRadiotoggleButtonClick"
+                />
+        </RadioGroup>
+        <Button
+            android:id="@+id/display_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_button"
+            android:text="Connect and send"
+            android:textColor="@color/White"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/radiogroup2"/>
+
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>
